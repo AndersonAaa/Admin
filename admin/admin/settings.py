@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-wmrjru-pm!9c_)4*oxpvi6mnp%@7*nf+3*5*vkmtg6#0c6^74n
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['0.0.0.0']
+ALLOWED_HOSTS = ['0.0.0.0', "127.0.0.1"]
 
 # Application definition
 
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
-    'corsheaders',
     'products'
 ]
 
@@ -78,12 +77,12 @@ WSGI_APPLICATION = 'admin.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'admin',
-        'USER': 'root',
-        'PASSWORD': 'root',
-        'HOST': 'db',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'defh3d8lced5f4',
+        'USER': 'xnkzpcumocyltu',
+        'PASSWORD': '7905459b3db7cdfdfb34190aa18d16be404ac9ad251a7345eba80ff98a0b452f',
+        'HOST': 'ec2-34-202-66-20.compute-1.amazonaws.com',
+        'PORT': '5432',
     }
 }
 
